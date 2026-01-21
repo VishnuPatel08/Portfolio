@@ -1,0 +1,26 @@
+/* Critical CSS - Inline this in the head for faster loading */
+/* This contains the essential styles for above-the-fold content */
+
+/* CSS Reset and Variables */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--primary-color:#6366f1;--primary-light:#818cf8;--primary-dark:#4f46e5;--white:#ffffff;--gray-50:#f9fafb;--gray-100:#f3f4f6;--gray-600:#4b5563;--gray-700:#374151;--gray-800:#1f2937;--gray-900:#111827;--bg-primary:var(--white);--text-primary:var(--gray-900);--text-secondary:var(--gray-600);--font-family-primary:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--text-base:1rem;--text-lg:1.125rem;--text-xl:1.25rem;--text-5xl:3rem;--space-4:1rem;--space-6:1.5rem;--radius-md:0.5rem;--radius-full:9999px;--transition-normal:250ms ease-in-out}
+
+/* Dark theme variables */
+[data-theme="dark"]{--bg-primary:var(--gray-900);--text-primary:var(--white);--text-secondary:var(--gray-300)}
+
+/* Base styles */
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:var(--font-family-primary);font-size:var(--text-base);line-height:1.6;color:var(--text-primary);background-color:var(--bg-primary);overflow-x:hidden;transition:background-color var(--transition-normal),color var(--transition-normal)}
+
+/* Loading screen */
+#loading-screen{position:fixed;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,var(--primary-color),var(--primary-light));display:flex;justify-content:center;align-items:center;z-index:9999;opacity:1;visibility:visible;transition:opacity 0.5s ease,visibility 0.5s ease}
+#loading-screen.hidden{opacity:0;visibility:hidden}
+
+/* Navigation */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1030;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--gray-200);transition:all var(--transition-normal)}
+[data-theme="dark"] .navbar{background:rgba(17,24,39,0.95)}
+.nav-container{max-width:1200px;margin:0 auto;padding:0 var(--space-6);display:flex;align-items:center;justify-content:space-between;height:70px}
+
+/* Hero section */
+.hero{min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,var(--bg-primary) 0%,var(--gray-50) 100%);padding-top:70px;position:relative;overflow:hidden}
+.hero-title .name{display:block;font-size:var(--text-5xl);font-weight:700;color:var(--text-primary);background:linear-gradient(135deg,var(--primary-color),#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}

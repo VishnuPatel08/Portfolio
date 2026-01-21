@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio showcasing my work, skills, and experience">
+    <meta name="keywords" content="portfolio, developer, projects, resume, skills">
+    <meta name="author" content="Vishnu Patel">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Vishnu Patel - Portfolio">
+    <meta property="og:description" content="Professional portfolio showcasing my work and skills">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourportfolio.com">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vishnu Patel - Portfolio">
+    <meta name="twitter:description" content="Professional portfolio showcasing my work and skills">
+    
+    <title>Vishnu Patel - Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="nav-logo-link">
+                    <span class="logo-text">Vishnu Patel</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link" data-section="about">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+                <a href="#projects" class="nav-link" data-section="projects">
+                    <i class="fas fa-code"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#skills" class="nav-link" data-section="skills">
+                    <i class="fas fa-cogs"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="#resume" class="nav-link" data-section="resume">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Resume</span>
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="greeting">Hello, I'm</span>
+                            <span class="name">Vishnu Patel</span>
+                            <span class="role">Full Stack Developer</span>
+                        </h1>
+                        <p class="hero-description">
+                            I create beautiful, functional, and user-friendly digital experiences. 
+                            Passionate about clean code, innovative solutions, and bringing ideas to life.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">
+                                <i class="fas fa-code"></i>
+                                View My Work
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fas fa-envelope"></i>
+                                Get In Touch
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-avatar">
+                            <img src="images/avatar.jpg" alt="Vishnu Patel" class="avatar-img">
+                            <div class="avatar-border"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-social">
+                    <a href="https://github.com/VishnuPatel08?tab=overview&from=2025-09-01&to=2025-09-30" target="_blank" rel="noopener" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vishnu-patel-535961205/" target="_blank" rel="noopener" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://x.com/vxnupatel" target="_blank" rel="noopener" class="social-link">
+                        <i class="fab fa-x"></i>
+                    </a>
+                    <a href="mailto:vishnupatel9926@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                
+                <div class="scroll-indicator">
+                    <span class="scroll-text">Scroll Down</span>
+                    <div class="scroll-arrow">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Animated Background -->
+            <div class="hero-bg">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                    <div class="shape shape-5"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Get to know me better</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3 class="about-title">Passionate Developer & Creative Problem Solver</h3>
+                        <p class="about-description">
+                            I'm a dedicated full-stack developer with a passion for creating innovative digital solutions. 
+                            With expertise in modern web technologies, I enjoy turning complex problems into simple, 
+                            beautiful, and intuitive designs.
+                        </p>
+                        <p class="about-description">
+                            When I'm not coding, you can find me exploring new technologies, contributing to open-source 
+                            projects, or sharing knowledge with the developer community. I believe in continuous learning 
+                            and staying up-to-date with the latest industry trends.
+                        </p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-image">
+                        <div class="about-img-container">
+                            <img src="images/about-image.png" alt="About me" class="about-img">
+                            <div class="about-img-border"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">Technologies I work with</p>
+                </div>
+                
+                <div class="skills-content">
+                    <div class="skills-category">
+                        <h3 class="category-title">Frontend</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <span class="skill-name">HTML5</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-percentage="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <span class="skill-name">CSS3</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-percentage="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-percentage="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <span class="skill-name">React</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-percentage="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3 class="category-title">Backend</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-percentage="82"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <span class="skill-name">Python</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-percentage="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <span class="skill-name">MongoDB</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-percentage="78"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <span class="skill-name">Express.js</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-percentage="83"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3 class="category-title">Tools & Others</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                                <span class="skill-name">Git</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-percentage="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-docker"></i>
+                                </div>
+                                <span class="skill-name">Docker</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-percentage="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-aws"></i>
+                                </div>
+                                <span class="skill-name">AWS</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-percentage="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <span class="skill-name">Responsive Design</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-percentage="93"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Some of my recent work</p>
+                </div>
+                
+                <!--<div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web App</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="ui">UI/UX</button>
+                </div>-->
+                
+                <div class="projects-grid">
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="images/project1.jpg" alt="E-Commerce Platform">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="https://pdf-dashboardsss.vercel.app/" class="project-btn" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/VishnuPatel08/pdf-dashboard" class="project-btn" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">PDF-Dashboard</h3>
+                            <p class="project-description">
+                                A full-stack PDF dashboard solution with invoice data extraction using Gemini and Grok API, 
+                                and admin dashboard.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <img src="images/project2.jpg" alt="AI Powered VideoApp">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="#" class="project-btn" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/VishnuPatel08/AI_VideoHub" class="project-btn" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AI Powered VideoApp</h3>
+                            <p class="project-description">
+                                An Video management application with AI features like video recommendations, Auto Thumbnails, Smart Cropping all just by changing url parameters using ImageKit. 
+                                Secured with next-auth and role based access.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">ImageKit</span>
+                                <span class="tech-tag">next-auth</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="images/project3.jpg" alt="Charity Donation Platform">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="#" class="project-btn" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/VishnuPatel08/DonateForGood" class="project-btn" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Charity Donation Platform</h3>
+                            <p class="project-description">
+                                A platform to facilitate donations for various charitable causes, with user authentication and payment integration.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Solidity</span>
+                                <span class="tech-tag">Web3</span>
+                                <span class="tech-tag">Express</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="ui">
+                        <div class="project-image">
+                            <img src="images/project4.jpg" alt="School-Management-Systemm">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="https://github.com/VishnuPatel08/School-Management-Systemm" class="project-btn" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-btn" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">School Management System</h3>
+                            <p class="project-description">
+                                A comprehensive school management system with features for student enrollment, 
+                                attendance tracking, and grade management with different user roles.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Redux</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="projects-cta">
+                    <a href="https://github.com/VishnuPatel08" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-github"></i>
+                        View All Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Resume</h2>
+                    <p class="section-subtitle">My professional journey</p>
+                </div>
+                
+                <div class="resume-content">
+                    <div class="resume-column">
+                        <h3 class="resume-title">
+                            <i class="fas fa-briefcase"></i>
+                            Experience
+                        </h3>
+                        
+                        <div class="timeline">
+                            <!--<div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">Senior Full Stack Developer</h4>
+                                    <span class="timeline-company">Tech Company Inc.</span>
+                                    <span class="timeline-period">2022 - Present</span>
+                                    <p class="timeline-description">
+                                        Lead development of scalable web applications, mentor junior developers, 
+                                        and collaborate with cross-functional teams to deliver high-quality products.
+                                    </p>
+                                </div>
+                            </div>-->
+                            
+                            <!--<div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">Frontend Developer</h4>
+                                    <span class="timeline-company">Digital Agency Co.</span>
+                                    <span class="timeline-period">2020 - 2022</span>
+                                    <p class="timeline-description">
+                                        Developed responsive web applications using modern frameworks, 
+                                        optimized performance, and ensured cross-browser compatibility.
+                                    </p>
+                                </div>
+                            </div>-->
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">Junior Web Developer</h4>
+                                    <span class="timeline-company">THE CODERWAY</span>
+                                    <span class="timeline-period">2024 - 2025</span>
+                                    <p class="timeline-description">
+                                        Built landing pages, implemented UI designs, and learned modern 
+                                        development practices in a fast-paced startup environment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="resume-column">
+                        <h3 class="resume-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            Education
+                        </h3>
+                        
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">Bachelor of Computer Science</h4>
+                                    <span class="timeline-company">Vellore Institute of Technology, Vellore</span>
+                                    <span class="timeline-period">2022 - 2026</span>
+                                    <p class="timeline-description">
+                                        Final Year UG with honors. Focused on software engineering fundamentals, web development, Algorithms and data structures.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4 class="timeline-title">Full Stack Web Development</h4>
+                                    <span class="timeline-company">Coding Bootcamp</span>
+                                    <span class="timeline-period">2023</span>
+                                    <p class="timeline-description">
+                                        Intensive 6-month program covering modern web development 
+                                        technologies and best practices.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="resume-download">
+                            <a href="assets/Vishnu_Patel_Resume.pdf" class="btn btn-primary" download>
+                                <i class="fas fa-download"></i>
+                                Download Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's work together</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 class="contact-title">Let's discuss your project</h3>
+                        <p class="contact-description">
+                            I'm always interested in new opportunities and exciting projects. 
+                            Whether you have a question or just want to say hi, feel free to reach out!
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h4 class="method-title">Email</h4>
+                                    <a href="mailto:vishnupatel9926@gmail.com" class="method-link">
+                                        vishnupatel9926@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h4 class="method-title">Phone</h4>
+                                    <a href="tel:+1234567890" class="method-link">
+                                        +91 8962177906
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h4 class="method-title">Location</h4>
+                                    <span class="method-text">Banglore, India</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <a href="https://github.com/VishnuPatel08?tab=overview&from=2025-09-01&to=2025-09-30" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/vishnu-patel-535961205/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://x.com/vxnupatel" target="_blank" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="form">
+                            <input type="hidden" name="access_key" value="c0738d16-c43d-4524-aa09-482c9ce38b5a">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Vishnu Patel. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home" class="footer-link">Privacy Policy</a>
+                    <a href="#home" class="footer-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
